@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Vue 포트폴리오 클론",
+    "description": "Vue와 Node.js로 만든 간단한 포트폴리오 사이트입니다.",
+    "link": "https://github.com/your-id/portfolio-clone"
+  },
+  {
+    "title": "Todo App",
+    "description": "Express와 Vue로 만든 투두 앱 예제입니다.",
+    "link": "https://github.com/your-id/todo-app"
+  }
+]
