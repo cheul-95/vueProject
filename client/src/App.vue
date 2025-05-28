@@ -24,23 +24,3 @@ export default {
   margin-top: 60px;
 }
 </style>
-
-<!-- client/src/components/HelloAPI.vue -->
-<template>
-  <div>
-    <p>{{ message }}</p>
-  </div>
-</template>
-
-<script>
-export default {
-  data() {
-    return { message: '' };
-  },
-  mounted() {
-    fetch('http://localhost:5000/api/hello')
-      .then(res => res.json())
-      .then(data => { this.message = data.message; });
-  }
-}
-</script>
