@@ -17,8 +17,17 @@
       <button class="mobile-menu-btn" id="list_mobile"></button>
     </div>  
   </header>
+  <aside>
+  <!-- 네비게이션 점들 -->
+    <div class="nav-dots">
+        <div class="nav-dot active" onclick="showContent(1)"></div>
+        <div class="nav-dot" onclick="showContent(2)"></div>
+        <div class="nav-dot" onclick="showContent(3)"></div>
+        <div class="nav-dot" onclick="showContent(4)"></div>
+        <div class="nav-dot" onclick="showContent(5)"></div>
+    </div>
+  </aside>
 </template>
-
 <script>
 export default {
   name: 'AppHeader'
@@ -147,4 +156,31 @@ nav ul li a:hover {
         display: none;
     }
 }
+
+/* 네비게이션 */
+.nav-dots {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-100%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+.nav-dot.active {
+    background: #9c1e22;
+    /* border-color: white; */
+    transform: scale(1.2);
+}
+
 </style>
